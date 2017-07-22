@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="item_detail">Product Details</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="email_subject">Order for %1$s</string>
+    <string name="email_body">Dear Sir/Madam\n
+    I would like to place a new order for QUANTITY of %1$s.</string>
+
+    <string name="delete_dialog_prompt">Delete this product?</string>
+    <string name="delete_dialog_positive">Delete</string>
+    <string name="delete_dialog_negative">Cancel</string>
+
+    <string name="insert_error_uri">Insertion is not supported for %1$s</string>
+    <string name="insert_error">Failed to insert product. Please try again.</string>
+    <string name="insert_product_success">Product saved.</string>
+
+    <string name="read_error_uri">Unknown URI provided: </string>
+
+    <string name="delete_product_error">Error when deleting product.</string>
+    <string name="delete_product_success">Product deleted.</string>
+    <string name="delete_error_uri">Deletion is not supported for %1$s</string>
+
+    <string name="update_qty_error">Problem when updating product quantity</string>
+    <string name="update_error_uri">Update is not supported for %1$s</string>
+
+    <string name="get_type_error_uri">Unknown URI %1$s with match %2$s.</string>
+
+    <string name="name_validation">Product requires a name.</string>
+    <string name="price_validation">Product requires valid price.</string>
+    <string name="qty_validation">Product requires valid quantity.</string>
+    <string name="supp_email_validation">Product requires valid supplier email address.</string>
+
+    <string name="sell_below_zero">Product already sold out!</string>
+
+
+
+
+
+</resources>
