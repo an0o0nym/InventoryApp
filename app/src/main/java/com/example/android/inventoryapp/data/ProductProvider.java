@@ -180,6 +180,17 @@ public class ProductProvider extends ContentProvider{
 
     private boolean productIsValid (ContentValues contentValues, boolean isInserted) {
         Context context = getContext();
+
+        String colImg = ProductEntry.COLUMN_IMG;
+        if (isInserted || contentValues.containsKey(colImg)) {
+            String imgPath = contentValues.getAsString(colImg);
+            if (TextUtils.isEmpty(imgPath)) {
+                Toast.makeText(context, context.getString(R.string.img_validation),
+                        Toast.LENGTH_SHORT).show();
+                return false;
+            }
+        }
+
         String colName = ProductEntry.COLUMN_NAME;
         if (isInserted || contentValues.containsKey(colName)) {
             String name = contentValues.getAsString(colName);

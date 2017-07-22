@@ -30,6 +30,8 @@
     <string name="price_validation">Product requires valid price.</string>
     <string name="qty_validation">Product requires valid quantity.</string>
     <string name="supp_email_validation">Product requires valid supplier email address.</string>
+    <string name="img_validation">Product requires valid image.</string>
+
 
     <string name="sell_below_zero">Product already sold out!</string>
 

@@ -180,7 +180,7 @@ public class DetailActivity extends AppCompatActivity
     private void updateQty(boolean subtract) {
         ContentValues contentvalues = new ContentValues();
 
-        if (qty > 0) {
+        if (!subtract || qty > 0) {
             contentvalues.put(ProductEntry.COLUMN_QTY, subtract ? --qty : ++qty);
             int rowsUpdated = getContentResolver().update(mCurrentProductUri,
                     contentvalues, null, null);
